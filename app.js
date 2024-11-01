@@ -40,7 +40,7 @@ form.addEventListener("submit", async (e) => {
       const source = '<?xml version="1.0" standalone="no"?>\r\n' + e;
       const url =
         "data:image/svg+xml;charset=utf-8," + encodeURIComponent(source);
-      const node = `<a href='${url}' >${e.replace(
+      const node = `<a download="qr.svg" href='${url}' >${e.replace(
         /width="500" height="500"/,
         ""
       )}</a>`;
