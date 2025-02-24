@@ -1,72 +1,94 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: #252525;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    background: #252525;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .contenedor {
-  max-width: 90%;
-  width: 400px;
-  margin: 80px auto;
+    max-width: 90%;
+    width: 400px;
+    margin: 80px auto;
 }
 
 .formulario input[type="text"] {
-  padding: 20px;
-  border: none;
-  background: #fff;
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  font-size: 20px;
-  margin-bottom: 20px;
-  font-family: "Open Sans", sans-serif;
+    padding: 20px;
+    border: none;
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
 }
 
 .formulario .btn {
-  width: 100%;
-  border: none;
-  background: rgb(6, 32, 95);
-  color: #fff;
-  cursor: pointer;
-  padding: 20px;
-  font-size: 20px;
-  border-radius: 5px;
-  font-family: "Open Sans", sans-serif;
+    width: 100%;
+    border: none;
+    background: rgb(6, 32, 95);
+    color: #fff;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
 }
 
 .formulario .btn:hover {
-  background: #3e14b2;
+    background: #3e14b2;
 }
 
 .contenedorQR {
-  display: flex;
-  justify-content: center;
-  padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
 }
 #canvas {
-  margin-block-start: 1rem;
-  width: 100% !important;
-  height: 100% !important;
+    margin-block-start: 1rem;
+    width: 100% !important;
+    height: 100% !important;
 }
 #list {
-  color: white;
-  font-size: 1.5em;
-  text-align: center;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 .content {
-  margin-block-start: 1rem;
+    margin-block-start: 1rem;
 }
 
 .press {
-  margin: 1rem;
-  text-align: center;
-  color: white;
-  font-size: 1.2em;
-  display: none;
+    margin: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    display: none;
+}
+footer {
+    margin-top: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.footer__created {
+    font-style: italic;
+    font-size: 14px;
+    color: #fff;
+}
+.footer__created > a {
+    color: #35a0df;
 }
